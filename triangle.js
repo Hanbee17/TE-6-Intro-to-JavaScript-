@@ -1,3 +1,6 @@
-console.log("Hi");
-for (let number = 0; number <= 10; number = +1);
-console.log(number);
+console.log("triangle");
+let triangle = "#";
+while (triangle.length <= 7) {
+  console.log(triangle);
+  triangle = triangle + '#'
+}
