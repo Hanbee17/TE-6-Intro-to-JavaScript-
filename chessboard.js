@@ -1,7 +1,17 @@
 console.log("chessboard");
-let chess = ""
-let board = "#"
-while (board.length <= 8) {
-  console.log(board, chess, board);
-  board = board + '#'
+let size = 8;
+
+let board = "";
+
+for (let y = 0; y < size; y++) {
+  for (let x = 0; x < size; x++) {
+    if ((x + y) % 2 == 0) {
+      board += " ";
+    } else {
+      board += "#";
+    }
+  }
+  board += "\n";
 }
+
+console.log(board);
